@@ -1,4 +1,4 @@
-def recursive_sum(nested_lists):
+def linear(nested_lists):
     res = []
 
     def rec(nested_lists):
@@ -8,4 +8,4 @@ def recursive_sum(nested_lists):
             for i in nested_lists:
                 rec(i)
     rec(nested_lists)
-    return sum(res)
+    return res
