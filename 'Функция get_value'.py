@@ -4,9 +4,6 @@ def get_all_values(nested_dicts, key):
     def rec(nested_dicts):
         try:
             res.append(nested_dicts[key])
-            for i in nested_dicts.values():
-                if type(i) == dict:
-                    rec(i)
         except:
             for i in nested_dicts.values():
                 if type(i) == dict:
